@@ -13,6 +13,8 @@ public class MainWindowsController {
     @FXML private Label lblResult;
 
     private double x, y;
+    private double num1 = 0;
+    private String operator = "+";
 
     public void init(Stage stage) {
         titlePane.setOnMousePressed(mouseEvent -> {
@@ -36,6 +38,19 @@ public class MainWindowsController {
 
     @FXML
     void onSymbolClicked(MouseEvent event) {
+        String symbol = ((Pane)event.getSource()).getId().replace("btn", "");
+        if (symbol.equals("Equals")) {
+            double num2 = Double.parseDouble(lblResult.getText());
+            switch (operator) {
+                case "+" -> lblResult.setText((num1 + num2) + "");
+                case "-" -> lblResult.setText((num1 - num2) + "");
+                case "*" -> lblResult.setText((num1 * num2) + "");
+                case "/" -> lblResult.setText((num1 / num2) + "");
+            }
+        } else if (symbol.equals("Close")) {
+            
+        } else {
 
+        }
     }
 }
