@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="460.0" stylesheets="@MainWindowStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainWindowsController">
    <children>
-      <Pane layoutX="6.0" layoutY="38.0" prefHeight="565.0" prefWidth="449.0" styleClass="mainPane">
+      <Pane fx:id="titlePane" layoutX="6.0" layoutY="38.0" prefHeight="565.0" prefWidth="449.0" styleClass="mainPane">
          <children>
             <Pane layoutX="-5.0" layoutY="-38.0" prefHeight="33.0" prefWidth="460.0">
                <children>
