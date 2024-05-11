@@ -1,16 +1,16 @@
 package main;
 
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
-import java.awt.*;
-import java.net.URL;
-import java.util.ResourceBundle;
-
 public class MainWindowsController {
     @FXML private Pane titlePane;
+    @FXML private ImageView btnMinimize, btnClose;
+    @FXML private Label lblResult;
 
     private double x, y;
 
@@ -23,5 +23,18 @@ public class MainWindowsController {
             stage.setX(mouseEvent.getScreenX()-x);
             stage.setY(mouseEvent.getScreenY()-y);
         });
+
+        btnClose.setOnMouseClicked(mouseEvent -> stage.close());
+        btnMinimize.setOnMouseClicked(mouseEvent -> stage.setIconified(true));
+    }
+
+    @FXML
+    void onNumberClicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void onSymbolClicked(MouseEvent event) {
+
     }
 }
