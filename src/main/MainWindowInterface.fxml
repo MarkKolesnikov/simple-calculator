@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="600.0" prefWidth="460.0" stylesheets="@MainWindowStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainWindowsController">
    <children>
       <Pane fx:id="titlePane" layoutX="6.0" layoutY="38.0" prefHeight="565.0" prefWidth="449.0" styleClass="mainPane">
@@ -38,7 +37,7 @@
             </Pane>
             <Pane layoutX="11.0" layoutY="10.0" onMouseClicked="#onNumberClicked" prefHeight="122.0" prefWidth="426.0" styleClass="highlight">
                <children>
-                  <Label fx:id="lblResult" layoutX="355.0" layoutY="45.0" prefHeight="45.0" prefWidth="51.0" text="0.0" textFill="WHITE">
+                  <Label fx:id="lblResult" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="45.0" prefHeight="45.0" prefWidth="403.0" text="0.0" textFill="WHITE">
                      <font>
                         <Font name="Impact" size="36.0" />
                      </font>
@@ -47,7 +46,7 @@
             </Pane>
             <Pane fx:id="btn7" layoutX="11.0" layoutY="137.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="highlight">
                <children>
-                  <Label fx:id="lblResult1" layoutX="36.0" layoutY="31.0" prefHeight="45.0" prefWidth="51.0" text="7" textFill="WHITE">
+                  <Label fx:id="lblResult1" layoutX="40.0" layoutY="30.0" prefHeight="45.0" prefWidth="51.0" text="7" textFill="WHITE">
                      <font>
                         <Font name="Impact" size="36.0" />
                      </font>
